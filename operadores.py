@@ -1,3 +1,4 @@
+from math import sqrt
 def adição(n1):
     n2 = int(input('Digite o segundo valor: '))
     risco()
@@ -30,6 +31,10 @@ def fatorial(n):
 
 def quadrado(n1):
     res = n1 * n1
+    return res
+
+def raiz(n1):
+    res = sqrt(n1)
     return res
 
 def risco():

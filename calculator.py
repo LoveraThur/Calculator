@@ -1,5 +1,5 @@
 import operadores   
-ops = ('+','-','x','/','!','q')
+ops = ('+','-','x','/','!','q','r')
 
 def calculadora():
     operadores.risco()
@@ -7,7 +7,7 @@ def calculadora():
     operadores.risco()
     n = int(input('Digite o primeiro número: '))
     operadores.risco()
-    print(' [+] [-] [x] \n [/] [!] [Q]\n')
+    print(' [+] [-] [x] \n [/] [!] [Q]\n [R]')
     op = ' '
     while op not in ops:
         op = str(input('Operação desejada: ')).lower()
@@ -26,6 +26,8 @@ def calculadora():
         print(f'{n} / {div[1]} = {div[0]}')
     elif op == 'q':
         print(f'{n} x {n} = {operadores.quadrado(n)}')
+    elif op == 'r':
+        print(f'√{n} = {operadores.raiz(n)}')
     else:
         print(f'{n}! = {operadores.fatorial(n)}')
 calculadora()
