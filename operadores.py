@@ -1,5 +1,5 @@
 from math import sqrt
-def adição(n1):
+def adicao(n1):
     '''-> Função Adição
     -> Calcula a adição de um numero n1 mais um numero n2
     n1: número que veio do programa principal
@@ -10,7 +10,7 @@ def adição(n1):
     res= n1 + n2
     return res, n2
    
-def subtração(n1):
+def subtracao(n1):
     '''-> Função Subtração
     -> Calcula a subtração de um numero n1 menos um numero n2
     n1: número que veio do programa principal
@@ -21,7 +21,7 @@ def subtração(n1):
     res = n1 - n2
     return res, n2
 
-def multiplicação(n1):
+def multiplicacao(n1):
     '''-> Função Multiplicação
     -> Calcula a multiplicação de um numero n1 por um numero n2
     n1: número que veio do programa principal
@@ -32,7 +32,7 @@ def multiplicação(n1):
     res = n1 * n2
     return res, n2
 
-def divisão(n1):
+def divisao(n1):
     '''-> Função Divisão
     -> calcula a divisão de um numero n1 por um numero n2
     n1: número que veio do programa principal

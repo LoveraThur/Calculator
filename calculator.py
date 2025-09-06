@@ -1,33 +1,33 @@
-import operadores   
+from operadores import *  
 ops = ('+','-','x','/','!','q','r')
 
 def calculadora():
-    operadores.risco()
+    risco()
     print('CALCULADORA'.center(30))
-    operadores.risco()
+    risco()
     n = int(input('Digite o primeiro número: '))
-    operadores.risco()
+    risco()
     print(' [+] [-] [x] \n [/] [!] [Q]\n [R]')
     op = ' '
     while op not in ops:
         op = str(input('Operação desejada: ')).lower()
-    operadores.risco()
+    risco()
     if op == '+':
-        a = operadores.adição(n)
+        a = adicao(n)
         print(f'{n} + {a[1]} = {a[0]}')
     elif op == '-':
-        s = operadores.subtração(n)
+        s = subtracao(n)
         print(f'{n} - {s[1]} = {s[0]}')
     elif op == 'x':
-        m= operadores.multiplicação(n)
+        m= multiplicacao(n)
         print(f'{n} x {m[1]} = {int(m[0])}')
     elif op == '/':
-        div = operadores.divisão(n)
+        div = divisao(n)
         print(f'{n} / {div[1]} = {div[0]}')
     elif op == 'q':
-        print(f'{n} x {n} = {operadores.quadrado(n)}')
+        print(f'{n} x {n} = {quadrado(n)}')
     elif op == 'r':
-        print(f'√{n} = {operadores.raiz(n)}')
+        print(f'√{n} = {raiz(n)}')
     else:
-        print(f'{n}! = {operadores.fatorial(n)}')
+        print(f'{n}! = {fatorial(n)}')
 calculadora()
