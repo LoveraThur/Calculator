@@ -5,7 +5,14 @@ def adicao(n1):
     n1: número que veio do programa principal
     n2: número que é pedido para fazer a operação
     res: resultado da operação'''
-    n2 = int(input('Digite o segundo valor: '))
+    while True:
+        try:
+            n2 = int(input('Digite o segundo valor: '))
+        except:
+            print('\033[31mNúmero Inválido. Tente novamente\033[m')
+            risco()
+        else:
+            break
     risco()
     res= n1 + n2
     return res, n2
@@ -16,7 +23,14 @@ def subtracao(n1):
     n1: número que veio do programa principal
     n2: número que é pedido para fazer a operação
     res: resultado da operação'''
-    n2 = int(input('Digite o segundo valor: '))
+    while True:
+        try:
+            n2 = float(input('Digite o segundo valor: '))
+        except:
+            print('\033[31mNúmero Inválido. Tente novamente\033[m')
+            risco()
+        else:
+            break
     risco()
     res = n1 - n2
     return res, n2
@@ -27,7 +41,14 @@ def multiplicacao(n1):
     n1: número que veio do programa principal
     n2: número que é pedido para fazer a operação
     res: resultado da operação'''
-    n2 = int(input('Digite o segundo valor: '))
+    while True:
+        try:
+            n2 = float(input('Digite o segundo valor: '))
+        except:
+            print('\033[31mNúmero Inválido. Tente novamente\033[m')
+            risco()
+        else:
+            break
     risco()
     res = n1 * n2
     return res, n2
@@ -38,7 +59,14 @@ def divisao(n1):
     n1: número que veio do programa principal
     n2: número que é pedido para fazer a operação
     res: resultado da operação'''
-    n2 = int(input('Digite o segundo valor: '))
+    while True:
+        try:
+            n2 = float(input('Digite o segundo valor: '))
+        except:
+            print('\033[31mNúmero Inválido. Tente novamente\033[m')
+            risco()
+        else:
+            break
     risco()
     res = n1 / n2
     return res, n2
