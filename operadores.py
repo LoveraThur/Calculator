@@ -97,6 +97,29 @@ def raiz(n1):
     res = sqrt(n1)
     return res
 
+def porcentagem(n1):
+    print('O que você deseja? \nAcrescimo[1] \nDesconto[2]')
+    opcao = ' '
+    while True:
+        try:
+            opcao = int(input('Opção desejada>>> '))
+        except:
+            risco()
+            print('Digite uma Opção Válida')    
+        if opcao == 1 or opcao == 2:
+            break
+    if opcao == 1:
+        risco()
+        acrescimo = float(input('Valor de Acrescimo[%]>>> '))
+        res = n1 + (n1 *(acrescimo/100))
+        return f'{n1} com {acrescimo}% de acrescimo = {res}'
+    elif opcao == 2:
+        risco()
+        desconto = float(input('Valor de Desconto[%]>>> '))
+        res = n1 - (n1 * (desconto/100))
+        return f'{n1} com {desconto}% de desconto = {res}'
+
+
 def risco():
     '''-> Função Risco
     -> Cria um risco para colocar entre operações ou para quebra de linha no programa principal

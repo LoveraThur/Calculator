@@ -1,5 +1,7 @@
 from operadores import *  
-ops = ('+','-','x','/','!','q','r')
+
+#Colocar %!!
+ops = ('+','-','x','/','!','q','r','%')
 
 def calculadora():
     risco()
@@ -14,7 +16,7 @@ def calculadora():
         else:
             break
     risco()
-    print(' [+] [-] [x] \n [/] [!] [Q]\n [R]')
+    print(' [+] [-] [x] \n [/] [!] [Q]\n [R] [%]')
     op = ' '
     while op not in ops:
         try:
@@ -38,6 +40,8 @@ def calculadora():
         print(f'{n} x {n} = {quadrado(n)}')
     elif op == 'r':
         print(f'√{n} = {raiz(n)}')
+    elif op == '%':
+        print(f'{porcentagem(n)}')
     else:
         print(f'{n}! = {fatorial(n)}')
 calculadora()
