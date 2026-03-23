@@ -20,3 +20,5 @@ esta calculadora contêm:
     raiz quadrada
     
     cubo
+
+    Porcentagem (acréscimo e desconto)
